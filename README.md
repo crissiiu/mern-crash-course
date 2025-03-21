@@ -54,7 +54,7 @@ npm run dev
 ```bash
 cd ../frontend
 npm install
-npm start
+npm run dev
 ```
 
 ---
@@ -102,12 +102,6 @@ MERN-CRASH-COURSE/
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to fork the repository and submit pull requests.
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
 
 ---
 
