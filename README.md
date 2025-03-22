@@ -1,4 +1,4 @@
-# MERN-CRASH-COURSE
+# MERN-CRASH-COURSE - https://mern-crash-course-1-5z8i.onrender.com/
 
 A **MERN Stack** application built with **MongoDB, Express, React, and Node.js**, styled using **Tailwind CSS**. This project is a beginner-friendly crash course for learning how to develop a full-stack web application using the MERN stack.
 
