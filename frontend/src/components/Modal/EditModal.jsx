@@ -18,8 +18,11 @@ const EditModal = ({ isOpen, onClose, product }) => {
   const [updatedProduct, setUpdatedProduct] = useState(product);
   const toast = useToast();
   const { updateProduct } = useProductStore();
-  const handleUpdateProduct = async (pid) => {
-    const { success, message } = await updateProduct(pid, updatedProduct);
+  const handleUpdateProduct = async () => {
+    const { success, message } = await updateProduct(
+      product._id,
+      updatedProduct
+    );
     if (!success) {
       toast({
         title: "Error",
@@ -76,11 +79,7 @@ const EditModal = ({ isOpen, onClose, product }) => {
           </VStack>
         </ModalBody>
         <ModalFooter>
-          <Button
-            colorScheme="blue"
-            mr={3}
-            onClick={handleUpdateProduct(product._id)}
-          >
+          <Button colorScheme="blue" mr={3} onClick={handleUpdateProduct}>
             Update
           </Button>
           <Button variant={"ghost"} onClick={onclose}>
